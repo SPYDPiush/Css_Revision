@@ -1,0 +1,325 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+img{
+  width: 100%;
+}
+
+
+body{
+  background: linear-gradient(rgb(241, 239, 239),white);
+  color: black;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+nav{
+  box-sizing: border-box;
+  width: 100vw ;
+  height: 153px;
+  background: linear-gradient(rgb(241, 239, 239),white);
+  color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+.nav_element{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px;
+}
+
+.nav_left{
+font-size: 111px;
+padding-left: 53px;
+}
+
+.nav_right{
+  text-align: right;
+  margin-right: 32px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+main{
+  position: relative;
+  top: 100px;
+  left: 0px;
+  right: 0px;
+}
+
+.main_1{
+  font-size: 42px;
+  color: #8e4023;
+  text-decoration:solid;
+  color: pink;
+  background-image: url(./image/img1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding-top: 70px;
+  z-index: -1;
+  background-attachment: fixed;
+  
+}
+
+.main_2{
+  height: 281px;
+  background: linear-gradient(rgb(241, 239, 239),white);
+  display: flex;
+  padding-top: 80px;
+  gap: 52px;
+  color: black;
+}
+
+.menu{
+  font-size: 72px;
+  text-transform: uppercase;
+  padding-left: 63px;
+}
+
+.menu_content{
+
+  padding-top: 9px;
+  width: 483px;
+  font-size: 21px;
+  text-transform: capitalize;
+}
+
+.menu_link{
+
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.main_3{
+
+  display: flex;
+  gap: 2%;
+  align-items: center;
+  background: linear-gradient(rgb(241, 239, 239),white);
+
+}
+
+.left_img{
+  flex: 0 0 49%;
+}
+
+.right_img{
+  flex: 0 1 49%;
+}
+
+
+.main_4{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 745px;
+  background: #999c68;
+  color: black;
+}
+
+.disc_left{
+
+  flex: 0 0 35%;
+  align-items: center;
+  font-size: 73px;
+  text-transform: uppercase;
+
+}
+
+.disc_right{
+  flex: 0 0 25%;
+  top: -42px;
+  position: relative;
+  font-size: 21px;
+}
+
+.disc_link{
+
+  padding-top: 102px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+
+.moments{
+  height: 193px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(rgb(241, 239, 239),white);
+  text-transform: uppercase;
+}
+
+.moments_head{
+  font-size: 64px;
+  word-spacing: -4px;
+  letter-spacing: -1px;
+  margin-left: 61px; 
+}
+
+.moments_follow{
+
+  font-size: 23px;
+  margin-right: 61px;
+  margin-top: 25px;
+  text-decoration: underline;
+  cursor: pointer; 
+}
+
+.moments_img{
+  height: max-content;
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+
+}
+
+.moments_img{
+scrollbar-color:white white;
+scrollbar-width:thin;
+}
+
+.moments_img::-webkit-scrollbar:hover{
+scrollbar-color:white white; 
+}
+
+.img1{
+  flex : 0 0 55%;
+}
+
+.img_templ{
+  flex: 0 0 37.2%;
+}
+
+.img_temp2{
+  flex: 0 0 37.2%;
+}
+
+.img_temp3{
+  flex: 0 0 37.2%;
+}
+
+.inner_temp{
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+}
+
+.img_temp{
+  flex: 0 0 47%;
+}
+
+.scrollbar_hidden{
+
+  background-color:black;
+  margin-top: -30px;
+}
+
+
+.moments_sign{
+  z-index: 1000;
+  background: white;
+  cursor: pointer;
+  font-size: 69px;
+font-weight: 800;
+}
+
+.left_sign{
+  position: relative;
+  top: -482px;
+left: 32px;
+color: wheat;
+float: left;
+}
+
+.right_sign{
+  position: relative;
+  top: -482px;
+float: right;
+right: 32px;
+color: wheat;
+/* display: none; */
+}
+
+.moments_img:hover ~ .right_sign{
+  color: black;
+  font-size: 210px;
+  display: inline-block;
+}
+
+footer{
+ position: relative;
+ top: 155px;
+ height:max-content;
+ background-color: #bab9b6;
+ padding-bottom: 150px;
+
+}
+
+.footer_logo{
+  margin-left: 52px ;
+  padding-top: 43px;
+  max-width: 100px ;
+}
+
+.footer_main{
+  padding-top: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left_footer{
+
+  display: flex;
+  gap: 28px;
+  padding-left: 41px;
+}
+
+.left_1{
+  font-size: 91px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.left_2{
+  font-size: 21px;
+  flex: 0 0 30%;
+  text-transform: capitalize;
+  padding-top: 21px;
+}
+
+.right_footer{
+text-transform: uppercase;
+  padding-right: 26px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: right;
+}
+
+.tag_footer{
+  margin-top: 50px;
+  padding-left: 43px;
+  font-size: 21px;
+  font-weight: 500;
+
+
+}
