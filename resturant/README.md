@@ -1,7 +1,6 @@
 to run the project use this link :
 
 **[visit Desi Tadka](https://desitadkap.netlify.app/)**
-https://desitadkap.netlify.app/
 
 this project is made up of the help of Html,Css and javascript , the javascript is used to slide the image catlog 
 
