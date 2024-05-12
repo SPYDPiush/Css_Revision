@@ -112,8 +112,8 @@
         </div>
         <div class="scrollbar_hidden"></div>
         <div class="moments_sign">
-          <div class="left_sign"><</div>
-          <div class="right_sign">></div>
+          <div class="left_sign">&lt;</div>
+          <div class="right_sign">&gt;</div>
         </div>
       </div>
     </main>
@@ -140,4 +140,53 @@
       <div class="tag_footer">@ 2023 by Desi Tadka.Powered by Piush Singh</div>
     </footer>
   </body>
+
+  <!-- <script>
+    const leftSign = document.querySelector(".left_sign");
+    const rightSign = document.querySelector(".right_sign");
+    const scrollContainer = document.querySelector(".moments_img");
+
+    scrollContainer.addEventListener('scroll' , function() {
+
+      leftSign.style.visibility = scrollContainer.scrollLeft === 0 ? "hidden" : "visible";
+      rightSign.style.visibility = scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth ? 'hidden' : 'visible';
+    })
+
+    leftSign.addEventListener('click', function () {
+      scrollContainer.scrollLeft -= 200;
+    })
+
+    rightSign.addEventListener('click', () => {
+      scrollContainer.scrollLeft += 200;
+    })
+  </script> -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const leftSign = document.querySelector(".left_sign");
+      const rightSign = document.querySelector(".right_sign");
+      const scrollContainer = document.querySelector(".moments_img");
+
+      scrollContainer.addEventListener("scroll", function () {
+        leftSign.style.visibility =
+          scrollContainer.scrollLeft === 0 ? "hidden" : "visible";
+        rightSign.style.visibility =
+          scrollContainer.scrollLeft + scrollContainer.clientWidth >=
+          scrollContainer.scrollWidth
+            ? "hidden"
+            : "visible";
+      });
+
+      leftSign.addEventListener("click", function () {
+        scrollContainer.scrollTo({
+          left : scrollContainer.scrollLeft -= 200,
+          behavior : "smooth" 
+        });
+      });
+
+      rightSign.addEventListener("click", function () {
+        scrollContainer.scrollLeft += 200;
+      });
+    });
+  </script>
 </html>
